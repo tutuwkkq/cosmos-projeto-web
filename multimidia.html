@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Assista ao vídeo e ouça a trilha espacial.">
+  <title>Multimídia | Cosmos</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="navbar navbar-expand-xl" aria-label="Menu principal">
+      <div class="container">
+        <a class="marca" href="index.html"><img src="img/logo.svg" alt="">Cosmos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="menu-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="menu-link" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="menu-link" href="planetas.html">Planetas</a></li>
+            <li class="nav-item"><a class="menu-link" href="dados.html">Dados</a></li>
+            <li class="nav-item"><a class="menu-link" href="galeria.html">Galeria</a></li>
+            <li class="nav-item"><a class="menu-link" href="multimidia.html">Mídia</a></li>
+            <li class="nav-item"><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+            <li class="nav-item"><a class="menu-link" href="quiz.html">Quiz</a></li>
+            <li class="nav-item"><a class="menu-link" href="contato.html">Contato</a></li>
+            <li class="nav-item"><a class="menu-link" href="https://science.nasa.gov/solar-system/" target="_blank" rel="noopener">NASA &#8599;</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="titulo-pagina">
+    <div class="container">
+      <h1>Multimídia</h1>
+      <p>Assista ao vídeo e ouça a trilha espacial.</p>
+    </div>
+  </section>
+  <main class="container py-4">
+    <div class="row g-4">
+      <section class="col-lg-8" aria-labelledby="t-video">
+        <h2 id="t-video" class="h4">Vídeo: órbitas do Sistema Solar interno</h2>
+        <div class="media-wrap">
+          <video controls preload="metadata" poster="img/poster-video.jpg">
+            <source src="video/sistema-solar.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeo.
+          </video>
+        </div>
+        <p class="mt-2 text-muted small">Animação simples com as órbitas de Mercúrio, Vênus, Terra, Marte, Júpiter e Saturno ao redor do Sol (velocidades ilustrativas).</p>
+      </section>
+      <aside class="col-lg-4" aria-labelledby="t-audio">
+        <div class="p-4 bg-white rounded-3 shadow-sm">
+          <h2 id="t-audio" class="h4">Áudio: trilha espacial</h2>
+          <p>Uma trilha ambiente gerada sinteticamente para acompanhar sua exploração. Ajuste o volume antes de começar.</p>
+          <div class="media-wrap">
+            <audio controls preload="metadata">
+              <source src="audio/ambiente.mp3" type="audio/mpeg">
+              Seu navegador não suporta a reprodução de áudio.
+            </audio>
+          </div>
+        </div>
+        <div class="alert alert-warning mt-3" role="alert">
+          Os controles são os nativos do navegador: reproduzir, pausar, volume e barra de progresso.
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-colunas">
+        <div>
+          <h4>Cosmos</h4>
+          <p>Projeto acadêmico de Desenvolvimento Front-End para Web sobre o Sistema Solar.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="planetas.html">Planetas</a></li>
+            <li><a href="dados.html">Dados</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="multimidia.html">Mídia</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="mapa-do-site.html">Mapa do site</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Links externos</h4>
+          <ul>
+            <li><a href="https://science.nasa.gov/solar-system/" target="_blank" rel="noopener">NASA – Sistema Solar</a></li>
+            <li><a href="https://www.gov.br/aeb" target="_blank" rel="noopener">Agência Espacial Brasileira</a></li>
+            <li><a href="https://stellarium-web.org/" target="_blank" rel="noopener">Stellarium Web</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="direitos">&copy; <span id="ano-atual">2026</span> Cosmos – Todos os direitos reservados.</p>
+    </div>
+  </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/comum.js"></script>
+</body>
+</html>
