@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare tamanho, distância, órbita e luas dos planetas.">
+  <title>Dados | Cosmos</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/puro.css">
+  <style>
+    .titulo-secao {
+      border-left: 5px solid #ff8a3d;
+      padding-left: 0.7rem;
+    }
+
+    .visually-hidden-puro {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+    }
+
+    #resultado-busca {
+      color: #55627c;
+    }
+  </style>
+</head>
+<body>
+  <header class="cabecalho">
+    <nav aria-label="Menu principal">
+      <div class="container-puro">
+        <div class="barra">
+          <a class="marca" href="index.html"><img src="img/logo.svg" alt="">Cosmos</a>
+          <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-puro" aria-label="Abrir menu">&#9776;</button>
+          <ul class="menu-puro" id="menu-puro">
+            <li><a class="menu-link" href="index.html">Início</a></li>
+            <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+            <li><a class="menu-link" href="planetas.html">Planetas</a></li>
+            <li><a class="menu-link" href="dados.html">Dados</a></li>
+            <li><a class="menu-link" href="galeria.html">Galeria</a></li>
+            <li><a class="menu-link" href="multimidia.html">Mídia</a></li>
+            <li><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+            <li><a class="menu-link" href="quiz.html">Quiz</a></li>
+            <li><a class="menu-link" href="contato.html">Contato</a></li>
+            <li><a class="menu-link" href="https://science.nasa.gov/solar-system/" target="_blank" rel="noopener">NASA &#8599;</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="titulo-pagina">
+    <div class="container-puro">
+      <h1>Dados</h1>
+      <p>Compare tamanho, distância, órbita e luas dos planetas.</p>
+    </div>
+  </section>
+  <main class="container-puro" style="padding-top: 2rem;">
+    <section aria-labelledby="t-tabela">
+      <h2 id="t-tabela" class="titulo-secao">Comparativo dos planetas</h2>
+      <div class="busca">
+        <label for="busca" class="visually-hidden-puro">Buscar planeta</label>
+        <input type="search" id="busca" placeholder="Buscar por nome ou valor">
+        <label for="filtro-tipo" class="visually-hidden-puro">Filtrar por tipo</label>
+        <select id="filtro-tipo">
+          <option value="todos">Todos os tipos</option>
+          <option value="rochoso">Rochosos</option>
+          <option value="gasoso">Gasosos</option>
+        </select>
+      </div>
+      <p id="resultado-busca" role="status"></p>
+      <div class="tabela-wrap">
+        <table class="tabela" id="tabela-planetas">
+          <caption>Clique no título de uma coluna para ordenar. Valores aproximados; o número de luas muda conforme novas descobertas.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Planeta</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Diâmetro (km)</th>
+              <th scope="col">Distância do Sol (milhões de km)</th>
+              <th scope="col">Período orbital</th>
+              <th scope="col">Luas conhecidas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-tipo="rochoso">
+              <td>Mercúrio</td>
+              <td>Rochoso</td>
+              <td data-valor="4879">4.879</td>
+              <td data-valor="57.9">57,9</td>
+              <td data-valor="88">88 dias</td>
+              <td data-valor="0">0</td>
+            </tr>
+            <tr data-tipo="rochoso">
+              <td>Vênus</td>
+              <td>Rochoso</td>
+              <td data-valor="12104">12.104</td>
+              <td data-valor="108.2">108,2</td>
+              <td data-valor="225">225 dias</td>
+              <td data-valor="0">0</td>
+            </tr>
+            <tr data-tipo="rochoso">
+              <td>Terra</td>
+              <td>Rochoso</td>
+              <td data-valor="12742">12.742</td>
+              <td data-valor="149.6">149,6</td>
+              <td data-valor="365">365 dias</td>
+              <td data-valor="1">1</td>
+            </tr>
+            <tr data-tipo="rochoso">
+              <td>Marte</td>
+              <td>Rochoso</td>
+              <td data-valor="6779">6.779</td>
+              <td data-valor="227.9">227,9</td>
+              <td data-valor="687">687 dias</td>
+              <td data-valor="2">2</td>
+            </tr>
+            <tr data-tipo="gasoso">
+              <td>Júpiter</td>
+              <td>Gasoso</td>
+              <td data-valor="139820">139.820</td>
+              <td data-valor="778.5">778,5</td>
+              <td data-valor="4333">11,9 anos</td>
+              <td data-valor="95">95</td>
+            </tr>
+            <tr data-tipo="gasoso">
+              <td>Saturno</td>
+              <td>Gasoso</td>
+              <td data-valor="116460">116.460</td>
+              <td data-valor="1434">1.434</td>
+              <td data-valor="10759">29,4 anos</td>
+              <td data-valor="274">274</td>
+            </tr>
+            <tr data-tipo="gasoso">
+              <td>Urano</td>
+              <td>Gasoso</td>
+              <td data-valor="50724">50.724</td>
+              <td data-valor="2872">2.872</td>
+              <td data-valor="30687">84 anos</td>
+              <td data-valor="28">28</td>
+            </tr>
+            <tr data-tipo="gasoso">
+              <td>Netuno</td>
+              <td>Gasoso</td>
+              <td data-valor="49244">49.244</td>
+              <td data-valor="4495">4.495</td>
+              <td data-valor="60190">164,8 anos</td>
+              <td data-valor="16">16</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="grade-info" style="margin-top: 2rem;" aria-label="Recordes do Sistema Solar">
+      <div class="info-box"><div class="destaque-numero">Júpiter</div><p>Maior planeta, com 139.820 km de diâmetro.</p></div>
+      <div class="info-box"><div class="destaque-numero">Mercúrio</div><p>Menor planeta e o mais próximo do Sol.</p></div>
+      <div class="info-box"><div class="destaque-numero">Netuno</div><p>Mais distante: cerca de 4,5 bilhões de km do Sol.</p></div>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="container-puro">
+      <div class="rodape-colunas">
+        <div>
+          <h4>Cosmos</h4>
+          <p>Projeto acadêmico de Desenvolvimento Front-End para Web sobre o Sistema Solar.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="planetas.html">Planetas</a></li>
+            <li><a href="dados.html">Dados</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="multimidia.html">Mídia</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="mapa-do-site.html">Mapa do site</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Links externos</h4>
+          <ul>
+            <li><a href="https://science.nasa.gov/solar-system/" target="_blank" rel="noopener">NASA – Sistema Solar</a></li>
+            <li><a href="https://www.gov.br/aeb" target="_blank" rel="noopener">Agência Espacial Brasileira</a></li>
+            <li><a href="https://stellarium-web.org/" target="_blank" rel="noopener">Stellarium Web</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="direitos">&copy; <span id="ano-atual">2026</span> Cosmos – Todos os direitos reservados.</p>
+    </div>
+  </footer>
+    <script src="js/comum.js"></script>
+    <script src="js/dados.js"></script>
+</body>
+</html>
