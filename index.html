@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore o Sistema Solar com o projeto Cosmos.">
+  <title>Início | Cosmos</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <style>
+    section h2 {
+      border-left: 5px solid #ff8a3d;
+      padding-left: 0.7rem;
+    }
+
+    #saudacao {
+      color: #b8500f;
+    }
+
+    .faixa-numeros {
+      background-color: #0b1d3a;
+      color: #d6e0f5;
+    }
+
+    .faixa-numeros .destaque-numero {
+      color: #ff8a3d;
+    }
+  </style>
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="navbar navbar-expand-xl" aria-label="Menu principal">
+      <div class="container">
+        <a class="marca" href="index.html"><img src="img/logo.svg" alt="">Cosmos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="menu-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="menu-link" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="menu-link" href="planetas.html">Planetas</a></li>
+            <li class="nav-item"><a class="menu-link" href="dados.html">Dados</a></li>
+            <li class="nav-item"><a class="menu-link" href="galeria.html">Galeria</a></li>
+            <li class="nav-item"><a class="menu-link" href="multimidia.html">Mídia</a></li>
+            <li class="nav-item"><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+            <li class="nav-item"><a class="menu-link" href="quiz.html">Quiz</a></li>
+            <li class="nav-item"><a class="menu-link" href="contato.html">Contato</a></li>
+            <li class="nav-item"><a class="menu-link" href="https://science.nasa.gov/solar-system/" target="_blank" rel="noopener">NASA &#8599;</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="hero" aria-labelledby="titulo-hero">
+    <div class="container">
+      <p class="text-uppercase fw-bold mb-2" style="color: #ff8a3d; letter-spacing: 0.15em;">Projeto Front-End Web</p>
+      <h1 id="titulo-hero">Explore o Sistema Solar</h1>
+      <p>Descubra os oito planetas, veja ilustrações, assista a um vídeo, ouça uma trilha espacial e teste o que aprendeu em um quiz interativo.</p>
+      <div class="d-flex flex-wrap gap-3 mt-4">
+        <a class="btn btn-warning btn-lg fw-bold" href="planetas.html">Conhecer os planetas</a>
+        <a class="btn btn-outline-light btn-lg" href="quiz.html">Jogar o quiz</a>
+      </div>
+    </div>
+  </section>
+  <main class="container py-4">
+    <section class="mb-5" aria-labelledby="t-boas-vindas">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-7">
+          <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+            <h2 id="t-boas-vindas" class="h4">Boas-vindas</h2>
+            <p id="saudacao" class="fs-4 fw-bold"></p>
+            <p>Esta é sua visita número <strong id="contador-visitas">1</strong> neste navegador. Quer ser chamado pelo nome? Informe abaixo e ele ficará salvo.</p>
+            <form id="form-nome" class="row g-2 formulario">
+              <div class="col-sm-8">
+                <label for="campo-nome" class="visually-hidden">Seu nome</label>
+                <input type="text" id="campo-nome" class="form-control" placeholder="Digite seu nome" required minlength="2">
+              </div>
+              <div class="col-sm-4">
+                <button type="submit" class="btn btn-primary w-100 fw-bold">Salvar nome</button>
+              </div>
+            </form>
+            <div id="aviso-nome" class="alert alert-success mt-3 mb-0 d-none" role="alert">Nome salvo com sucesso! Ele será lembrado nas próximas visitas.</div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <aside class="p-4 rounded-3 text-center h-100 faixa-numeros">
+            <h2 class="h5 text-white">O Sistema Solar em números</h2>
+            <div class="row mt-3" id="painel-numeros"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="t-destaques">
+      <h2 id="t-destaques" class="mb-4">Destaques do site</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        <div class="col">
+          <article class="card h-100 cartao">
+            <img src="img/jupiter.svg" class="card-img-top" alt="Ilustração: Planetas">
+            <div class="card-body cartao-corpo d-flex flex-column">
+              <h3 class="card-title">Planetas</h3>
+              <p class="card-text flex-grow-1">Conheça cada um dos oito planetas, do rochoso Mercúrio ao distante Netuno.</p>
+              <a href="planetas.html" class="btn btn-warning fw-bold align-self-start">Ver planetas</a>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="card h-100 cartao">
+            <img src="img/saturno.svg" class="card-img-top" alt="Ilustração: Galeria">
+            <div class="card-body cartao-corpo d-flex flex-column">
+              <h3 class="card-title">Galeria</h3>
+              <p class="card-text flex-grow-1">Ilustrações em uma galeria interativa com visualizador em tela cheia.</p>
+              <a href="galeria.html" class="btn btn-warning fw-bold align-self-start">Abrir galeria</a>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="card h-100 cartao">
+            <img src="img/terra.svg" class="card-img-top" alt="Ilustração: Quiz">
+            <div class="card-body cartao-corpo d-flex flex-column">
+              <h3 class="card-title">Quiz</h3>
+              <p class="card-text flex-grow-1">Responda oito perguntas e veja se você é um verdadeiro astrônomo.</p>
+              <a href="quiz.html" class="btn btn-warning fw-bold align-self-start">Começar quiz</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="alert alert-info mt-5" role="alert">
+      <strong>Dica:</strong> use a página <a href="dados.html" class="alert-link">Dados</a> para ordenar e filtrar a tabela de planetas.
+    </div>
+  </main>
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-colunas">
+        <div>
+          <h4>Cosmos</h4>
+          <p>Projeto acadêmico de Desenvolvimento Front-End para Web sobre o Sistema Solar.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="planetas.html">Planetas</a></li>
+            <li><a href="dados.html">Dados</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="multimidia.html">Mídia</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="mapa-do-site.html">Mapa do site</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Links externos</h4>
+          <ul>
+            <li><a href="https://science.nasa.gov/solar-system/" target="_blank" rel="noopener">NASA – Sistema Solar</a></li>
+            <li><a href="https://www.gov.br/aeb" target="_blank" rel="noopener">Agência Espacial Brasileira</a></li>
+            <li><a href="https://stellarium-web.org/" target="_blank" rel="noopener">Stellarium Web</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="direitos">&copy; <span id="ano-atual">2026</span> Cosmos – Todos os direitos reservados.</p>
+    </div>
+  </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/comum.js"></script>
+    <script src="js/inicio.js"></script>
+</body>
+</html>
