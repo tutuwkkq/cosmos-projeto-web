@@ -1,0 +1,17 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+
+# Arquivos temporários do Word
+~$*.docx
+.~lock.*
+
+# Dependências e logs
+node_modules/
+*.log
