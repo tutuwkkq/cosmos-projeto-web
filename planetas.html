@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Os oito planetas do Sistema Solar em cartões.">
+  <title>Planetas | Cosmos</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/puro.css">
+  <style>
+    .titulo-secao {
+      border-left: 5px solid #ff8a3d;
+      padding-left: 0.7rem;
+    }
+
+    .botoes-filtro {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-bottom: 0.8rem;
+    }
+
+    #contador-cartoes {
+      color: #55627c;
+      margin-bottom: 1.4rem;
+    }
+
+    .cartao h3 {
+      color: #16305c;
+    }
+  </style>
+</head>
+<body>
+  <header class="cabecalho">
+    <nav aria-label="Menu principal">
+      <div class="container-puro">
+        <div class="barra">
+          <a class="marca" href="index.html"><img src="img/logo.svg" alt="">Cosmos</a>
+          <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-puro" aria-label="Abrir menu">&#9776;</button>
+          <ul class="menu-puro" id="menu-puro">
+            <li><a class="menu-link" href="index.html">Início</a></li>
+            <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+            <li><a class="menu-link" href="planetas.html">Planetas</a></li>
+            <li><a class="menu-link" href="dados.html">Dados</a></li>
+            <li><a class="menu-link" href="galeria.html">Galeria</a></li>
+            <li><a class="menu-link" href="multimidia.html">Mídia</a></li>
+            <li><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+            <li><a class="menu-link" href="quiz.html">Quiz</a></li>
+            <li><a class="menu-link" href="contato.html">Contato</a></li>
+            <li><a class="menu-link" href="https://science.nasa.gov/solar-system/" target="_blank" rel="noopener">NASA &#8599;</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="titulo-pagina">
+    <div class="container-puro">
+      <h1>Planetas</h1>
+      <p>Os oito planetas do Sistema Solar em cartões.</p>
+    </div>
+  </section>
+  <main class="container-puro" style="padding-top: 2rem;">
+    <section aria-labelledby="t-filtro">
+      <h2 id="t-filtro" class="titulo-secao">Escolha um tipo de planeta</h2>
+      <div class="botoes-filtro">
+        <button type="button" class="btn-cosmo" data-filtro="todos" aria-pressed="true">Todos</button>
+        <button type="button" class="btn-cosmo" data-filtro="rochoso" aria-pressed="false">Rochosos</button>
+        <button type="button" class="btn-cosmo" data-filtro="gasoso" aria-pressed="false">Gasosos</button>
+      </div>
+      <p id="contador-cartoes" role="status">8 planeta(s) exibido(s)</p>
+      <div class="linha-cartoes">
+        <article class="cartao" data-tipo="rochoso">
+          <img src="img/mercurio.svg" alt="Ilustração de Mercúrio">
+          <div class="cartao-corpo">
+            <h3>Mercúrio</h3>
+            <p>O menor planeta e o mais próximo do Sol. Os dias chegam a cerca de 430 °C e as noites caem a quase −180 °C.</p>
+            <a class="btn-cosmo" href="dados.html">Ver dados</a>
+          </div>
+        </article>
+        <article class="cartao" data-tipo="rochoso">
+          <img src="img/venus.svg" alt="Ilustração de Vênus">
+          <div class="cartao-corpo">
+            <h3>Vênus</h3>
+            <p>O planeta mais quente, com cerca de 465 °C por causa do intenso efeito estufa. Gira no sentido contrário ao da maioria.</p>
+            <a class="btn-cosmo" href="dados.html">Ver dados</a>
+          </div>
+        </article>
+        <article class="cartao" data-tipo="rochoso">
+          <img src="img/terra.svg" alt="Ilustração de Terra">
+          <div class="cartao-corpo">
+            <h3>Terra</h3>
+            <p>Nosso lar e o único mundo conhecido com vida. Cerca de 71% da superfície é coberta por água líquida.</p>
+            <a class="btn-cosmo" href="dados.html">Ver dados</a>
+          </div>
+        </article>
+        <article class="cartao" data-tipo="rochoso">
+          <img src="img/marte.svg" alt="Ilustração de Marte">
+          <div class="cartao-corpo">
+            <h3>Marte</h3>
+            <p>O Planeta Vermelho abriga o Olympus Mons, o maior vulcão conhecido do Sistema Solar, com cerca de 22 km de altura.</p>
+            <a class="btn-cosmo" href="dados.html">Ver dados</a>
+          </div>
+        </article>
+        <article class="cartao" data-tipo="gasoso">
+          <img src="img/jupiter.svg" alt="Ilustração de Júpiter">
+          <div class="cartao-corpo">
+            <h3>Júpiter</h3>
+            <p>O gigante do Sistema Solar tem massa maior que a de todos os outros planetas somados e uma tempestade secular.</p>
+            <a class="btn-cosmo" href="dados.html">Ver dados</a>
+          </div>
+        </article>
+        <article class="cartao" data-tipo="gasoso">
+          <img src="img/saturno.svg" alt="Ilustração de Saturno">
+          <div class="cartao-corpo">
+            <h3>Saturno</h3>
+            <p>Famoso pelos anéis de gelo e rocha, é tão pouco denso que, em teoria, flutuaria na água.</p>
+            <a class="btn-cosmo" href="dados.html">Ver dados</a>
+          </div>
+        </article>
+        <article class="cartao" data-tipo="gasoso">
+          <img src="img/urano.svg" alt="Ilustração de Urano">
+          <div class="cartao-corpo">
+            <h3>Urano</h3>
+            <p>Gigante de gelo que gira praticamente deitado, com o eixo inclinado cerca de 98° em relação à órbita.</p>
+            <a class="btn-cosmo" href="dados.html">Ver dados</a>
+          </div>
+        </article>
+        <article class="cartao" data-tipo="gasoso">
+          <img src="img/netuno.svg" alt="Ilustração de Netuno">
+          <div class="cartao-corpo">
+            <h3>Netuno</h3>
+            <p>O mais distante dos planetas tem os ventos mais rápidos, que ultrapassam 2.000 km/h.</p>
+            <a class="btn-cosmo" href="dados.html">Ver dados</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="container-puro">
+      <div class="rodape-colunas">
+        <div>
+          <h4>Cosmos</h4>
+          <p>Projeto acadêmico de Desenvolvimento Front-End para Web sobre o Sistema Solar.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="planetas.html">Planetas</a></li>
+            <li><a href="dados.html">Dados</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="multimidia.html">Mídia</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="mapa-do-site.html">Mapa do site</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Links externos</h4>
+          <ul>
+            <li><a href="https://science.nasa.gov/solar-system/" target="_blank" rel="noopener">NASA – Sistema Solar</a></li>
+            <li><a href="https://www.gov.br/aeb" target="_blank" rel="noopener">Agência Espacial Brasileira</a></li>
+            <li><a href="https://stellarium-web.org/" target="_blank" rel="noopener">Stellarium Web</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="direitos">&copy; <span id="ano-atual">2026</span> Cosmos – Todos os direitos reservados.</p>
+    </div>
+  </footer>
+    <script src="js/comum.js"></script>
+    <script src="js/planetas.js"></script>
+</body>
+</html>
