@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Teste seus conhecimentos sobre os planetas.">
+  <title>Quiz | Cosmos</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/puro.css">
+  <style>
+    .titulo-secao {
+      border-left: 5px solid #ff8a3d;
+      padding-left: 0.7rem;
+    }
+
+    .btn-cosmo:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="cabecalho">
+    <nav aria-label="Menu principal">
+      <div class="container-puro">
+        <div class="barra">
+          <a class="marca" href="index.html"><img src="img/logo.svg" alt="">Cosmos</a>
+          <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-puro" aria-label="Abrir menu">&#9776;</button>
+          <ul class="menu-puro" id="menu-puro">
+            <li><a class="menu-link" href="index.html">Início</a></li>
+            <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+            <li><a class="menu-link" href="planetas.html">Planetas</a></li>
+            <li><a class="menu-link" href="dados.html">Dados</a></li>
+            <li><a class="menu-link" href="galeria.html">Galeria</a></li>
+            <li><a class="menu-link" href="multimidia.html">Mídia</a></li>
+            <li><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+            <li><a class="menu-link" href="quiz.html">Quiz</a></li>
+            <li><a class="menu-link" href="contato.html">Contato</a></li>
+            <li><a class="menu-link" href="https://science.nasa.gov/solar-system/" target="_blank" rel="noopener">NASA &#8599;</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="titulo-pagina">
+    <div class="container-puro">
+      <h1>Quiz</h1>
+      <p>Teste seus conhecimentos sobre os planetas.</p>
+    </div>
+  </section>
+  <main class="container-puro" style="padding-top: 2rem;">
+    <section class="quiz-caixa" aria-labelledby="t-quiz" style="max-width: 720px; margin: 0 auto;">
+      <h2 id="t-quiz" class="titulo-secao">Quiz do Sistema Solar</h2>
+      <div class="progresso" aria-hidden="true"><div id="barra-progresso"></div></div>
+      <div id="area-pergunta">
+        <p id="numero-pergunta" style="color: #55627c; margin-bottom: 0.2rem;"></p>
+        <h3 id="texto-pergunta"></h3>
+        <div class="opcoes" id="opcoes"></div>
+        <button type="button" class="btn-cosmo" id="proxima" disabled>Próxima</button>
+      </div>
+      <div id="area-resultado" hidden>
+        <h3>Resultado</h3>
+        <p id="texto-placar"></p>
+        <button type="button" class="btn-cosmo" id="reiniciar">Jogar novamente</button>
+      </div>
+      <p id="texto-recorde" style="margin-top: 1.2rem; color: #55627c;"></p>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="container-puro">
+      <div class="rodape-colunas">
+        <div>
+          <h4>Cosmos</h4>
+          <p>Projeto acadêmico de Desenvolvimento Front-End para Web sobre o Sistema Solar.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="planetas.html">Planetas</a></li>
+            <li><a href="dados.html">Dados</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="multimidia.html">Mídia</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="mapa-do-site.html">Mapa do site</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Links externos</h4>
+          <ul>
+            <li><a href="https://science.nasa.gov/solar-system/" target="_blank" rel="noopener">NASA – Sistema Solar</a></li>
+            <li><a href="https://www.gov.br/aeb" target="_blank" rel="noopener">Agência Espacial Brasileira</a></li>
+            <li><a href="https://stellarium-web.org/" target="_blank" rel="noopener">Stellarium Web</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="direitos">&copy; <span id="ano-atual">2026</span> Cosmos – Todos os direitos reservados.</p>
+    </div>
+  </footer>
+    <script src="js/comum.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
